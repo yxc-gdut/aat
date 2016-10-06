@@ -1,6 +1,6 @@
 .card {
     width: 980px;
-    margin: 20px auto 0;
+    margin: 40px auto 0;
     clear: both;
     font-size: 0;
     line-height: 0;
@@ -155,8 +155,6 @@
     bottom: 0;
     background: rgba(0,0,0,0.2);
     display: none;
-    -pie-background: rgba(0,0,0,0.2);
-    behavior: url(PIE.htc);
 }
 .player {
     display: inline-block;
