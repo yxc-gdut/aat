@@ -1,0 +1,43 @@
+doctype html
+html
+  head
+    title!= title
+    meta(http-equiv="content-type" content="text/html;charset=utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=Edge")
+    link(rel='stylesheet', href='/css/common/base.css')
+    link(rel='stylesheet', href='/css/common/head.css')
+    block css
+
+  body
+    div(class="head")
+      div(class="headW")
+        div(class="logo")
+        div(class="nav" id="nav")
+          div(class="moveItem" id="moveItem")
+          ul(class="navList" id="navList")
+            li(class="navItem selected")
+              a(href="#") 首页
+            li(class="navItem ")
+              a(href="#") 走进艾艾贴
+            li(class="navItem ")
+              a(href="#") 新闻动态
+            li(class="navItem ")
+              a(href="#") 产品展示
+            li(class="navItem ")
+              a(href="#") 成功案例
+            li(class="navItem ")
+              a(href="#") 艾灸知识
+            li(class="navItem ")
+              a(href="#") 产品购买
+            li(class="navItem ")
+              a(href="#") 代理加盟
+            li(class="navItem ")
+              a(href="#") 在线咨询
+    block content
+
+
+    div(class="foot")
+
+    script(src="/js/libs/jquery.min.js")
+    script(src="/js/common/nav.js")
+    block js
