@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title!= title
+    title #{title}
     meta(http-equiv="content-type" content="text/html;charset=utf-8")
     meta(http-equiv="X-UA-Compatible" content="IE=Edge")
     link(rel='stylesheet', href='/css/common/base.css')
@@ -15,23 +15,23 @@ html
         div(class="nav" id="nav")
           div(class="moveItem" id="moveItem")
           ul(class="navList" id="navList")
-            li(class="navItem selected")
-              a(href="#") 首页
-            li(class="navItem ")
+            li(class="navItem #{selected === 'index' ? 'selected' : ''}")
+              a(href="/") 首页
+            li(class="navItem #{selected === 'aat' ? 'selected' : ''}")
               a(href="/aat") 走进艾艾贴
-            li(class="navItem ")
+            li(class="navItem #{selected === 'news' ? 'selected' : ''}")
               a(href="/news") 新闻动态
-            li(class="navItem ")
+            li(class="navItem #{selected === 'product' ? 'selected' : ''}")
               a(href="/product") 产品展示
-            li(class="navItem ")
+            li(class="navItem #{selected === 'success' ? 'selected' : ''}")
               a(href="/success") 成功案例
-            li(class="navItem ")
+            li(class="navItem #{selected === 'aijiu' ? 'selected' : ''}")
               a(href="/aijiu") 艾灸知识
-            li(class="navItem ")
+            li(class="navItem #{selected === 'shop' ? 'selected' : ''}")
               a(href="/shop") 产品购买
-            li(class="navItem ")
-              a(href="/jion") 代理加盟
-            li(class="navItem ")
+            li(class="navItem #{selected === 'join' ? 'selected' : ''}")
+              a(href="/join") 代理加盟
+            li(class="navItem #{selected === 'contact' ? 'selected' : ''}")
               a(href="/contact") 在线咨询
     block content
 
