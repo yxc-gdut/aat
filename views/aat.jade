@@ -9,14 +9,95 @@ block content
   div.tab_wrap
     div.tab
       ul.tab_nav
-        li.tab_navItem 走进艾艾贴
-        li.tab_navItem 认识艾艾贴
-        li.tab_navItem 艾艾贴公司介绍
-        li.tab_navItem 公司资质
-        li.tab_navItem 代理加盟
-        li.tab_navItem 联系我们
-        li.tab_navItem 在线咨询
+        li.tab_navTitle 走进艾艾贴
+        li.tab_navItem.active(id='brand' data-id='brand_tab') 品牌介绍
+        li.tab_navItem(id='introduction' data-id='company_tab') 公司介绍
+        li.tab_navItem(id='qualification' data-id='qualification_tab') 公司资质
+        li.tab_navItem(id='teamBuild' data-id='teamBuild_tab') 团队建设
+        li.tab_navItem(id='contact' data-id='contact_tab') 联系我们
       div.tab_c
+        div.tab_cItem.tab_cItem_brand.active(id='brand_tab')
+          p.tab_article_h2 品牌理念
+          br
+          p.tab_article_h3 继承
+          img.tab_article_img(src="/img/brand/1.jpg")
+          p.tab_article_c 悠悠数千年华夏岁月，艾草为华夏儿女解疾苦，正气象，被誉为“百草之王”，上至炎黄孔孟，下至村夫走卒，无不珍视陈艾；中医古籍，涉及到艾灸达 200多处；医圣李时珍《本草纲目》涉艾达 30 多处；艾艾贴充分研究古老的艾草文化，继承先人对艾草的偏好，坚持采用蕲艾为唯一产品原材。艾艾贴将继承艾文化为己任！
+          br
+          p.tab_article_h3 弘扬
+          img.tab_article_img(src="/img/brand/2.jpg")
+          p.tab_article_c “道法自然”，原始人用火时，某一部位的病痛受到火的烘烤而感到舒适，因烧灼艾草治愈众多的病痛，于是艾灸便产生。选用医圣故里“蕲艾”，经过“选材、挑选、敲打、提纯、晾晒、成型”六大步骤，用传统的人工手作方法，制作高品质的黄金艾柱。设计梅花形产品造型，热力更足，疗效显著。艾艾贴继承先人的制艾工艺，同时打造艾灸文化的时代气质。
+          br
+          p.tab_article_h3 实用美
+          img.tab_article_img(src="/img/brand/3.jpg")
+          p.tab_article_c 化繁为简，立足方便实用，改良传统造型设计，梅花形产品造型，热力更足，疗效显著。外包装设计时尚又不失文化气息，符合现代美学；让更多的人方便享受艾灸美事。艾艾贴以实用和日常美学作为准则，开发出实用而又精美的艾灸产品。
+          br
+          p.tab_article_c ✔艾艾贴的品牌形象是～梅花
+          p.tab_article_c 艾艾贴这个品牌是以梅花作为品牌的形象，这里我想要讲一个小故事。梅花是开在雪花飘飘的岁寒早春时，一般人认为是农历正月的代表花，冰清玉洁一身孤傲尤其为世人钟爱。
+          p.tab_article_c 梅花的花神相传是宋武帝的女儿寿阳公主，南朝某年农历正月初七这天的下午，宋武帝刘裕的女儿寿阳公主与宫女们在宫廷里嬉戏。
+          p.tab_article_c 寿阳公主过了一会儿，寿阳公主感到有些累了，便躺卧在含章殿的檐下小憩。这时恰好有一阵微风吹来，将梅花吹得纷纷落下，其中有几朵碰巧落到了寿阳公主的额头上，经汗水渍染后，在公主的前额上留下了腊梅花样的淡淡花痕，拂拭不去，使寿阳公主显得更加娇柔妩媚。皇后见了，十分喜欢，特意让寿阳公主保留着它，三天后才将其用水洗掉。此后，爱美的寿阳公主便时常摘几片梅花，粘贴在自己前额上，以助美观。宫女们见了，个个称奇，并跟着仿效起来。不久，这种被人们称为“梅花妆”(或简称“梅妆”)的妆饰方式便在宫中流传开来。后来，“梅花妆”又进一步流传到民间，并受到了女孩子们的喜爱，特别是那些官宦大户人家的女孩子以及歌伎舞女们，更是争相仿效。世人便传说公主是梅花的精灵变成的银子寿阳公主就成了梅花的花神。
+          p.tab_article_c ✔这个美丽的故事是点燃了我们的灵感，品牌就以梅花作为品牌的形象。传达出一种高贵古朴的气质，也寓意着一种中国传统文化的传承。
+
+        div.tab_cItem(id='company_tab')
+          p.tab_article_h3 ✔艾艾贴公司是:
+          p.tab_article_c 深圳前海艾艾贴生物科技有限公司
+          p.tab_article_c 以传承和弘扬艾文化为己任，将古老的传统艾灸养生疗法进行革新，以“传承、弘扬、实用美”作为理念信条；研发出简单实用、符合现代人生活习惯的艾灸产品－“艾艾贴”。
+          p.tab_article_c 品牌广告语：越艾越轻松
+          p.tab_article_h3 ✔艾艾贴品牌弘扬艾灸传统疗法
+          p.tab_article_c 使艾灸养生更具有便利性和时代性；将功能与养生美学相结合，研发出梅花形艾灸产品，热力足，疗效显著，期望艾灸养生成为一种日常养生美事！授权生产厂家是蕲艾协会会长单位--蕲春时珍本草科技有限公司生产。
+          p.tab_article_h3 ✔艾艾贴生产厂家是:
+          p.tab_article_c 蕲春时珍本草科技有限公司
+          p.tab_article_c 位于医圣李时珍故里湖北省蕲春县，占地200亩，公司背靠李时珍国际医药港，设立在医药氛围浓厚的李时珍医药工业园内。公司旗下不仅拥有5000余亩北纬30度GAP规范标准化蕲艾种植基地，还拥有具有自主知识产权和众多专利技术的健康养生产品研发中心。
+          p.tab_article_c 现已成为湖北地区最具影响力的蕲艾深加工企业。
+
+        div.tab_cItem(id='qualification_tab')
+          p.tab_article_c ✔深圳前海艾艾贴生物科技有限公司以传承和弘扬艾文化为己任，将古老的传统艾灸养生疗法进行革新，以“传承、弘扬、实用美”作为理念信条；研发出简单实用、符合现代人生活习惯的艾灸产品－“艾艾贴”。
+          p.tab_article_h3 公司资质：
+          img.tab_article_img(src="/img/qualification/1.jpg")
+          img.tab_article_img(src="/img/qualification/2.jpg")
+          img.tab_article_img(src="/img/qualification/3.jpg")
+          img.tab_article_img(src="/img/qualification/4.jpg")
+          p.tab_article_c ✔艾艾贴品牌弘扬艾灸传统疗法，使艾灸养生更具有便利性和时代性；将功能与养生美学相结合，研发出梅花形艾灸产品，热力更足，疗效显著，期望艾灸养生成为一种日常养生美事！授权蕲艾协会会长单位--蕲春时珍本草科技有限公司生产。
+          img.tab_article_img(src="/img/qualification/5.jpg")
+          img.tab_article_img(src="/img/qualification/6.jpg")
+          img.tab_article_img(src="/img/qualification/7.jpg")
+          p.tab_article_c ✔蕲春时珍本草科技有限公司位于医圣李时珍故里湖北省蕲春县，占地200亩，公司背靠李时珍国际医药港，设立在医药氛围浓厚的李时珍医药工业园内。公司旗下不仅拥有5000余亩北纬30度GAP规范标准化蕲艾种植基地，还拥有具有自主知识产权和众多专利技术的健康养生产品研发中心。多年来坚持以蕲艾系列制品作为市场突破口，深度挖掘李时珍医药文化，不断扩大经营规模，现已成为湖北地区最具影响力的蕲艾深加工企业。
+          p.tab_article_h3 公司曾获荣誉：
+          p.tab_article_c 2013年第十届中国武汉农业博览会金奖和首届李时珍旅游产品金奖
+          p.tab_article_c 2014年CCTV上榜品牌
+          p.tab_article_h3 厂家营业执照：
+          img.tab_article_img(src="/img/qualification/8.jpg")
+          p.tab_article_c ✔艾艾贴致力于打造最权威的养生微商团队，带给大家最全面和最好的艾灸知识和培训体系。让大家更懂艾，更会用艾，共享“艾”价值。
+          p.tab_article_c 艾艾贴是行业内首家通过国际权威瑞士通标SGS的检测认证产品：
+          img.tab_article_img(src="/img/qualification/9.jpg")
+          img.tab_article_img(src="/img/qualification/10.jpg")
+          p.tab_article_h3 ✔艾艾贴蕲艾原产地检验报告：
+          img.tab_article_img(src="/img/qualification/11.jpg")
+          img.tab_article_img(src="/img/qualification/12.jpg")
+          img.tab_article_img(src="/img/qualification/13.jpg")
+
+        div.tab_cItem(id='teamBuild_tab')
+          img.tab_article_img(src="/img/teamBuild/1.png")
+          img.tab_article_img(src="/img/teamBuild/2.png")
+          img.tab_article_img(src="/img/teamBuild/3.png")
+          img.tab_article_img(src="/img/teamBuild/4.png")
+          img.tab_article_img(src="/img/teamBuild/5.png")
+          img.tab_article_img(src="/img/teamBuild/6.png")
+          img.tab_article_img(src="/img/teamBuild/7.png")
+          img.tab_article_img(src="/img/teamBuild/8.png")
+          img.tab_article_img(src="/img/teamBuild/9.png")
+
+        div.tab_cItem(id='contact_tab')
+          p.tab_article_h2 艾 艾 贴.艾 灸 代 理 商
+          p.tab_article_h2
+           span.tab_article_label 联系人：
+           span 卢小姐
+          p.tab_article_h2
+            span.tab_article_label 微信号：
+            span L234537021
+          p.tab_article_h2
+            span.tab_article_label 邮  箱：
+            span 234537021@qq.com.cn
+          img.tab_article_img(src="/img/weixinqr.png")
 
 block js
   script(src="/js/tab.js")

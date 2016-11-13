@@ -2,19 +2,84 @@ extends layout
 
 block css
   link(rel='stylesheet', href='/css/common/tab.css')
-  link(rel='stylesheet', href='/css/aat.css')
+  link(rel='stylesheet', href='/css/news.css')
 
 block content
   div.s_pic
   div.tab_wrap
     div.tab
       ul.tab_nav
-        li.tab_navItem 新闻动态
-        li.tab_navItem 行业动态
-        li.tab_navItem 公司动态
-        li.tab_navItem 团队建设
+        li.tab_navTitle 新闻资讯
+        li.tab_navItem.active(id='news' data-id='news_tab') 新闻动态
+        li.tab_navItem(id='video' data-id='video_tab') 视频展示
 
-div.tab_c
+      div.tab_c
+        div.tab_cItem.active(id='news_tab')
+          ul.news
+            li.news_item
+              a.news_item_a(href="/news/1")
+                img.news_pic(src="/img/news/1/main.png")
+                div.news_title 三分钟了解艾灸
+                  div.new_title_time 2016-10-13
+                div.news_summary 现代人贪食寒凉、工作疲劳、非时作息、性情浮躁都在耗损着阳气，而人体脏腑的运转，经络的运行等一切生理活动都离不开阳气的推动。中医养生保健重在扶阳，而最直接有效补充阳气的方法就是艾灸。
+            li.news_item
+              a.news_item_a(href="/news/2")
+                img.news_pic(src="/img/news/2/main.png")
+                div.news_title 艾灸知识大全丨艾艾贴，引领健康养生新时尚
+                  div.new_title_time 2016-9-2
+                div.news_summary 艾灸产生于远古时代，是中国最古老的医术之一。从原始人发明火就出现了灸法的使用，在人类文明进程及医学发展史上都具有重要的影响。《黄帝内经》对灸法做了记载，甲骨文时代将“此草乂疾为‘艾’”就是充分的证明。
+            li.news_item
+              a.news_item_a(href="/news/3")
+                img.news_pic(src="/img/news/3/main.png")
+                div.news_title 艾养生丨红豆薏米粥祛湿？90%的人都犯了这几个错误
+                  div.new_title_time 2016-9-13
+                div.news_summary 夏季祛湿，祛湿的方法很多，比较常见的有食疗，很多人就喜欢“红豆薏米粥”，其实，你真的了解过它们的作用吗？
 
+        div.tab_cItem(id='video_tab')
+          ul.video
+            li.video_item
+              a.video_item_a(href="javascript:" data-url="http://v.qq.com/iframe/player.html?vid=o03307r78j6&tiny=0&auto=0")
+                img.video_pic(src="/img/news/video/1.png")
+                div.video_title 前海艾艾贴《大艾无疆》品牌形象宣传片
+            li.video_item
+              a.video_item_a(href="javascript:" data-url="http://v.qq.com/iframe/player.html?vid=h03309asdtf&tiny=0&auto=0")
+                img.video_pic(src="/img/news/video/2.png")
+                div.video_title 艾艾贴-CCTV-10《健康之路》15秒广告（高清带台标）
+            li.video_item
+              a.video_item_a(href="javascript:" data-url="http://v.qq.com/iframe/player.html?vid=h0189onzj2u&tiny=0&auto=0")
+                img.video_pic(src="/img/news/video/3.png")
+                div.video_title 艾艾贴使用说明书
+            li.video_item
+              a.video_item_a(href="javascript:" data-url="http://v.qq.com/iframe/player.html?vid=a0194minmtd&tiny=0&auto=0")
+                img.video_pic(src="/img/news/video/4.png")
+                div.video_title 深圳前海艾艾贴《艾，灸在一起》
+            li.video_item
+              a.video_item_a(href="javascript:" data-url="http://v.qq.com/iframe/player.html?vid=e0316dws3df&tiny=0&auto=0")
+                img.video_pic(src="/img/news/video/5.png")
+                div.video_title 艾艾贴 一周年回顾视频
+            li.video_item
+              a.video_item_a(href="javascript:" data-url="http://v.qq.com/iframe/player.html?vid=d03188kdoik&tiny=0&auto=0")
+                img.video_pic(src="/img/news/video/6.png")
+                div.video_title 艾艾贴2016年度人物方中信
+            li.video_item
+              a.video_item_a(href="javascript:" data-url="http://v.qq.com/iframe/player.html?vid=f0317iq9a76&tiny=0&auto=0")
+                img.video_pic(src="/img/news/video/7.png")
+                div.video_title 艾艾贴艾灸中
+            li.video_item
+              a.video_item_a(href="javascript:" data-url="http://v.qq.com/iframe/player.html?vid=y0309dhxlvq&tiny=0&auto=0")
+                img.video_pic(src="/img/news/video/8.png")
+                div.video_title 《爱微时代》艾艾贴微电影
+            li.video_item
+              a.video_item_a(href="javascript:" data-url="http://v.qq.com/iframe/player.html?vid=a0196qzrcuv&tiny=0&auto=0")
+                img.video_pic(src="/img/news/video/9.png")
+                div.video_title 深圳前海艾艾贴《战略发布会之慈善篇0421》
+            li.video_item
+              a.video_item_a(href="javascript:" data-url="http://v.qq.com/iframe/player.html?vid=h0187no5ekn&tiny=0&auto=0")
+                img.video_pic(src="/img/news/video/10.png")
+                div.video_title 艾艾贴古法艾灸
+  div.cover(id="cover")
+    div.videoFrame
+      iframe(id="videoFrame" frameborder="0" width="640" height="498" src="" allowfullscreen="")
 block js
   script(src="/js/tab.js")
+  script(src="/js/news.js")

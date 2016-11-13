@@ -17,7 +17,17 @@
 .tab_nav {
     float: left;
     width: 200px;
-    box-shadow: 5px 0 10px #817d3e;
+    /*box-shadow: 5px 0 10px #817d3e;*/
+}
+
+.tab_navTitle{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    background-color: #70721e;
+    color: #ddd;
+    text-align: center;
+    margin-bottom: 2px;
 }
 
 .tab_navItem {
@@ -26,6 +36,8 @@
     line-height: 50px;
     border-bottom: 1px solid #ececec;
     padding-left: 1em;
+    transition-property: all;
+    transition-duration: 500ms;
 }
 
 .tab_navItem:hover {
@@ -34,4 +46,68 @@
 
 .tab_c {
     overflow: hidden;
+    border-left: 1px solid #817d3e;
+    padding-bottom: 30px;
+}
+
+.tab_cItem {
+    display: none;
+    min-height: 300px;
+    padding: 10px 20px;
+}
+
+.tab_cItem_brand {
+}
+
+.tab_navItem.active {
+    background-color: #817d3e;
+}
+
+.tab_cItem.active {
+    display: block;
+}
+
+.tab_article_c {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 8px;
+    text-indent: 2em;
+}
+
+.tab_article_img {
+    display: block;
+    margin: 5px auto;
+    max-width: 90%;
+}
+
+.tab_article_h1 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+
+.tab_article_h2 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.tab_article_h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.tab_article_label{
+    color:#666;
+}
+.tab_article_value{
+    color:#333;
 }
