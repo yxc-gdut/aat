@@ -9,14 +9,37 @@ block content
   div.tab_wrap
     div.tab
       ul.tab_nav
-        li.tab_navItem 成功案例
-        li.tab_navItem 长蛇灸+八髎穴
-        li.tab_navItem 感冒鼻炎
-        li.tab_navItem 肠胃
-        li.tab_navItem 关节疼
+        li.tab_navTitle 产品展示
+        li.tab_navItem.active(id='brand' data-id='useMethod_tab') 使用方法
+        li.tab_navItem(id='brand' data-id='product_tab') 产品特性
+        li.tab_navItem(id='brand' data-id='target_tab') 适合人群
 
+      div.tab_c
+        div.tab_cItem.active(id='useMethod_tab')
+          p.tab_article_h3 艾艾贴产品：
+          br
+          p.tab_article_c 艾艾贴精选大别山陈年艾草，选材、挑选、敲打、提纯、晾晒、成型，六大工艺铸就高质量产品！
+          p.tab_article_c 艾灸让您远离虚、远离寒、远离湿！
+          br
+          img.tab_article_img(src="/img/product/1.jpg")
+          br
+          p.tab_article_h3 艾艾贴施灸禁忌：
+          br
+          p.tab_article_c 1、饭前后1小时，不宜施灸。
+          p.tab_article_c 2、激烈运动后不能施灸。
+          p.tab_article_c 3、孕妇禁灸。
+          p.tab_article_c 4、身体发炎破皮部位禁灸。
+          p.tab_article_c 5、极度疲劳、过度饥饿、太渴、醉酒、妇女月经期，不宜施灸。
+          p.tab_article_c 6、现代中医禁灸的穴位。
+          p.tab_article_c 7、施灸期间不吃或少吃寒凉食物：如西瓜、香蕉、螃蟹、冷饮、凉茶等。
+          br
+          p.tab_article_h3 使用方法：
+          br
+          p.tab_article_c 撕开底部粘纸，点燃艾艾贴，贴在身体相应部位，当艾柱烧至止燃线后会自动熄灭，冷却后收集艾灰，取下底座。一般部位连灸两至三遍即可。
+          img.tab_article_img(src="/img/product/2.jpg")
 
-div.tab_c
+        div.tab_cItem(id='product_tab')
+        div.tab_cItem(id='target_tab')
 
 block js
   script(src="/js/tab.js")
