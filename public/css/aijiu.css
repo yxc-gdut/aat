@@ -1,0 +1,18 @@
+.xuewei_pinyin {
+    display: inline-block;
+    width: 50px;
+    vertical-align: top;
+    margin: 0 30px;
+}
+
+.xuewei_block a {
+    margin-right: 30px;
+}
+
+.xuewei_block {
+    display: inline-block;
+    vertical-align: top;
+}
+.xuewei_text {
+    display: block;
+}

@@ -3,18 +3,81 @@ extends layout
 block css
   link(rel='stylesheet', href='/css/common/tab.css')
   link(rel='stylesheet', href='/css/aat.css')
+  link(rel='stylesheet', href='/css/contact.css')
 
 block content
   div.s_pic
   div.tab_wrap
     div.tab
       ul.tab_nav
-        li.tab_navItem 代理商加盟
-        li.tab_navItem 代理加盟
-        li.tab_navItem 产品购买
-        li.tab_navItem 在线咨询
+        li.tab_navTitle 微商加盟
+        li.tab_navItem.active(id='join' data-id='join_tab') 加盟我们
+        li.tab_navItem(id='buy' data-id='buy_tab') 产品购买
+        li.tab_navItem(id='online' data-id='online_tab') 在线咨询
+      div.tab_c
+        div.tab_cItem.active(id='join_tab')
+          img.tab_article_img(src="/img/shop/1.png")
+          br
+          p.tab_article_h3 为什么要做微商?
+          p.tab_article_c 很简单 ，中国人平均每6秒看一次手机，这就是趋势。关注点在哪里，钱就在哪里?
+          p.tab_article_h3 为什么微商要选艾艾贴?
+          p.tab_article_c 很简单，艾灸的功效是经过几千年历史验证的，而且男女老少上至百岁老人，下至新生儿都可以用，艾艾贴市场太大啦!操作太简单了!人人都会自己在家使用的艾灸。
+          p.tab_article_c 互联网+健康=未来发展的大趋势，做生意就是顺应趋势
+          br
+          img.tab_article_img(src="/img/shop/2.png")
+          br
+          br
+          p.tab_article_h2 艾 艾 贴.艾 灸 代 理 商
+          p.tab_article_h2
+            span.tab_article_label 联系人：
+            span 卢小姐
+          p.tab_article_h2
+            span.tab_article_label 微信号：
+            span L234537021
+          p.tab_article_h2
+            span.tab_article_label 邮  箱：
+            span 234537021@qq.com.cn
 
-div.tab_c
+        div.tab_cItem(id='buy_tab')
+          p.tab_article_h2 艾艾贴全国统一零售价158元每盒（一盒60贴）；
+          p.tab_article_h2 一次性购满20盒享受优惠价：2200元。"
+          br
+          img.tab_article_img(src="/img/shop/buy/1.png")
+          br
+          br
+          p.tab_article_h2 艾 艾 贴.艾 灸 代 理 商
+          p.tab_article_h2
+            span.tab_article_label 联系人：
+            span 卢小姐
+          p.tab_article_h2
+            span.tab_article_label 微信号：
+            span L234537021
+          p.tab_article_h2
+            span.tab_article_label 邮  箱：
+            span 234537021@qq.com.cn
 
+        div.tab_cItem(id='online_tab')
+          form(id='form')
+            p.contacts_desc 如果您有艾艾帖代理、艾艾帖产品使用等问题可以在这里提交，我们会第一时间回复您。
+            div.contacts_item
+              span.contacts_left
+                label.contacts_label 姓名：
+                input.contacts_input(id="name" name="name")
+              span.contacts_left
+                label.contacts_label 电话：
+                input.contacts_input(id="phone" name="phone")
+            div.contacts_item
+              span.contacts_left
+                label.contacts_label 微信：
+                input.contacts_input(id="wechat" name="wechat")
+              span.contacts_left
+                label.contacts_label 邮箱：
+                input.contacts_input(id="email" name="email")
+            div.contacts_item
+              label.contacts_label 问题内容：
+              textarea.contacts_area(id="content" name="content")
+            div.contacts_item
+              a.contacts_btn(id="contactBtn" href="javascript:void(0);") 确认提交
 block js
   script(src="/js/tab.js")
+  script(src="/js/contact.js")

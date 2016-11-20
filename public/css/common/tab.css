@@ -20,7 +20,7 @@
     /*box-shadow: 5px 0 10px #817d3e;*/
 }
 
-.tab_navTitle{
+.tab_navTitle {
     display: block;
     height: 30px;
     line-height: 30px;
@@ -68,6 +68,7 @@
 }
 
 .tab_article_c {
+    display: block;
     font-size: 16px;
     line-height: 20px;
     margin-top: 8px;
@@ -96,6 +97,7 @@
     font-weight: bold;
     margin-top: 15px;
     text-align: center;
+    color: #948E27;
 }
 
 .tab_article_h3 {
@@ -105,9 +107,10 @@
     margin-top: 15px;
 }
 
-.tab_article_label{
-    color:#666;
+.tab_article_label {
+    color: #666;
 }
-.tab_article_value{
-    color:#333;
+
+.tab_article_value {
+    color: #333;
 }

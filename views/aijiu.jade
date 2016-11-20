@@ -3,20 +3,572 @@ extends layout
 block css
   link(rel='stylesheet', href='/css/common/tab.css')
   link(rel='stylesheet', href='/css/aat.css')
+  link(rel='stylesheet', href='/css/aijiu.css')
 
 block content
   div.s_pic
   div.tab_wrap
     div.tab
       ul.tab_nav
-        li.tab_navItem 艾灸知识
-        li.tab_navItem 艾灸养生
-        li.tab_navItem 艾灸穴位
-        li.tab_navItem 穴位查询
-        li.tab_navItem 资料下载
-        li.tab_navItem 艾灸知识
+        li.tab_navTitle 艾灸知识
+        li.tab_navItem(data-id='yansheng_tab') 艾灸养生
+        li.tab_navItem(data-id='check_tab') 穴位查询
+        li.tab_navItem(data-id='xuewei_tab') 艾灸穴位
 
-div.tab_c
+      div.tab_c
+        div.tab_cItem(id='yansheng_tab')
+        div.tab_cItem(id='xuewei_tab')
+          p.tab_article_h3
+            span.xuewei_pinyin B
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="") 臂臑穴
+                a(target="_blank" href="") 不容穴
+                a(target="_blank" href="") 髀关穴
+              span.xuewei_text
+                a(target="_blank" href="") 百会穴
+                a(target="_blank" href="") 百虫窝
+                a(target="_blank" href="") 秉风穴
+              span.xuewei_text
+                a(target="_blank" href="") 步廊穴
+                a(target="_blank" href="") 本神穴
+                a(target="_blank" href="") 白环俞
+              span.xuewei_text
+                a(target="_blank" href="") 胞肓穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin C
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="") 尺泽穴
+                a(target="_blank" href="") 攒竹穴
+                a(target="_blank" href="") 次髎穴
+              span.xuewei_text
+                a(target="_blank" href="") 承浆穴
+                a(target="_blank" href="") 承泣穴
+                a(target="_blank" href="") 承扶穴
+              span.xuewei_text
+                a(target="_blank" href="") 承满穴
+                a(target="_blank" href="") 承筋穴
+                a(target="_blank" href="") 承山穴
+              span.xuewei_text
+                a(target="_blank" href="") 冲门穴
+                a(target="_blank" href="") 冲阳穴
+                a(target="_blank" href="") 长强穴
+              span.xuewei_text
+                a(target="_blank" href="") 承光穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin D
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="") 地仓穴
+                a(target="_blank" href="") 地机穴
+                a(target="_blank" href="") 大巨穴
+              span.xuewei_text
+                a(target="_blank" href="") 大都穴
+                a(target="_blank" href="") 大迎穴
+                a(target="_blank" href="") 大横穴
+                a(target="_blank" href="")
+              span.xuewei_text
+                a(target="_blank" href="") 大包穴
+                a(target="_blank" href="") 大椎穴
+                a(target="_blank" href="") 大赫穴
+              span.xuewei_text
+                a(target="_blank" href="") 大肠俞
+                a(target="_blank" href="") 大杼穴
+                a(target="_blank" href="") 大陵穴
+              span.xuewei_text
+                a(target="_blank" href="") 大钟穴
+                a(target="_blank" href="") 大敦穴
+                a(target="_blank" href="") 兑端穴
+              span.xuewei_text
+                a(target="_blank" href="") 犊鼻穴
+                a(target="_blank" href="") 膻中穴
+                a(target="_blank" href="") 督俞穴
+              span.xuewei_text
+                a(target="_blank" href="") 定喘穴
+                a(target="_blank" href="") 带脉穴
+                a(target="_blank" href="") 胆俞穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin E
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="") 二间穴
+                a(target="_blank" href="") 耳门穴
+                a(target="_blank" href="") 耳尖
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin F
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="") 扶突穴
+                a(target="_blank" href="") 丰隆
+                a(target="_blank" href="") 府舍穴
+              span.xuewei_text
+                a(target="_blank" href="") 风门穴
+                a(target="_blank" href="") 风府穴
+                a(target="_blank" href="") 风市穴
+              span.xuewei_text
+                a(target="_blank" href="") 风池穴
+                a(target="_blank" href="") 飞扬穴
+                a(target="_blank" href="") 腹结穴
+              span.xuewei_text
+                a(target="_blank" href="") 腹通谷
+                a(target="_blank" href="") 腹哀穴
+                a(target="_blank" href="") 复溜穴
+              span.xuewei_text
+                a(target="_blank" href="") 肺俞穴
+                a(target="_blank" href="") 伏兔穴
+                a(target="_blank" href="") 浮白穴
+              span.xuewei_text
+                a(target="_blank" href="") 浮郄穴
+                a(target="_blank" href="") 附分穴
+                a(target="_blank" href="") 跗阳穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin G
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="") 肝俞穴
+                a(target="_blank" href="") 归来穴
+                a(target="_blank" href="") 公孙穴
+              span.xuewei_text
+                a(target="_blank" href="") 关冲穴
+                a(target="_blank" href="") 关元穴
+                a(target="_blank" href="") 关门穴
+              span.xuewei_text
+                a(target="_blank" href="") 关元俞
+                a(target="_blank" href="") 光明穴
+                a(target="_blank" href="") 膈俞穴
+              span.xuewei_text
+                a(target="_blank" href="") 膏肓穴
+                a(target="_blank" href="") 膈关穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin H
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="") 合谷穴
+                a(target="_blank" href="") 合阳穴
+                a(target="_blank" href="") 后顶穴
+              span.xuewei_text
+                a(target="_blank" href="") 后溪穴
+                a(target="_blank" href="") 横骨穴
+                a(target="_blank" href="") 会阴穴
+              span.xuewei_text
+                a(target="_blank" href="") 会宗穴
+                a(target="_blank" href="") 鹤顶穴
+                a(target="_blank" href="") 华盖穴
+              span.xuewei_text
+                a(target="_blank" href="") 滑肉门
+                a(target="_blank" href="") 颔厌穴
+                a(target="_blank" href="") 环跳穴
+              span.xuewei_text
+                a(target="_blank" href="") 会阳穴
+                a(target="_blank" href="") 肓俞穴
+                a(target="_blank" href="") 魂门穴
+              span.xuewei_text
+                a(target="_blank" href="") 肓门穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin J
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="") 经渠穴
+                a(target="_blank" href="") 金津玉液
+                a(target="_blank" href="") 金门穴
+              span.xuewei_text
+                a(target="_blank" href="") 京门穴
+                a(target="_blank" href="") 京骨穴
+                a(target="_blank" href="") 睛明穴
+              span.xuewei_text
+                a(target="_blank" href="") 极泉穴
+                a(target="_blank" href="") 间使穴
+                a(target="_blank" href="") 解溪穴
+              span.xuewei_text
+                a(target="_blank" href="") 箕门穴
+                a(target="_blank" href="") 厥阴俞
+                a(target="_blank" href="") 交信穴
+              span.xuewei_text
+                a(target="_blank" href="") 肩贞穴
+                a(target="_blank" href="") 肩髎穴
+                a(target="_blank" href="") 巨髎穴
+              span.xuewei_text
+                a(target="_blank" href="") 肩髃穴
+                a(target="_blank" href="") 肩中俞
+                a(target="_blank" href="") 肩外俞
+              span.xuewei_text
+                a(target="_blank" href="") 肩井穴
+                a(target="_blank" href="") 脊中穴
+                a(target="_blank" href="") 角孙穴
+              span.xuewei_text
+                a(target="_blank" href="") 居髎穴
+                a(target="_blank" href="") 巨阙穴
+                a(target="_blank" href="") 巨骨穴
+              span.xuewei_text
+                a(target="_blank" href="") 夹脊穴
+                a(target="_blank" href="") 颊车穴
+                a(target="_blank" href="") 急脉穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin K
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="") 孔最穴
+                a(target="_blank" href="") 昆仑穴
+                a(target="_blank" href="") 库房穴
+              span.xuewei_text
+                a(target="_blank" href="") 口禾髎
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin L
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="") 列缺穴
+                a(target="_blank" href="") 梁门穴
+                a(target="_blank" href="") 梁丘穴
+              span.xuewei_text
+                a(target="_blank" href="") 灵墟穴
+                a(target="_blank" href="") 灵道穴
+                a(target="_blank" href="") 廉泉穴
+              span.xuewei_text
+                a(target="_blank" href="") 蠡沟穴
+                a(target="_blank" href="") 落枕穴
+                a(target="_blank" href="") 阑尾穴
+              span.xuewei_text
+                a(target="_blank" href="") 漏谷穴
+                a(target="_blank" href="") 厉兑穴
+                a(target="_blank" href="") 络却穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin M
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="") 眉冲穴
+                a(target="_blank" href="") 命门穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin N
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="") 内庭穴
+                a(target="_blank" href="") 内关穴
+                a(target="_blank" href="") 臑俞穴
+              span.xuewei_text
+                a(target="_blank" href="") 臑会穴
+                a(target="_blank" href="") 脑户穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin P
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="") 偏历穴
+                a(target="_blank" href="") 脾俞穴
+                a(target="_blank" href="") 魄户穴
+              span.xuewei_text
+                a(target="_blank" href="") 仆参穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin Q
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="") 气冲穴
+                a(target="_blank" href="") 气舍穴
+                a(target="_blank" href="") 气户穴
+              span.xuewei_text
+                a(target="_blank" href="") 气海穴
+                a(target="_blank" href="") 气海俞
+                a(target="_blank" href="") 气穴
+              span.xuewei_text
+                a(target="_blank" href="") 曲垣穴
+                a(target="_blank" href="") 曲差穴
+                a(target="_blank" href="") 曲鬓穴
+              span.xuewei_text
+                a(target="_blank" href="") 曲池穴
+                a(target="_blank" href="") 曲泽穴
+                a(target="_blank" href="") 曲泉穴
+              span.xuewei_text
+                a(target="_blank" href="") 曲骨穴
+                a(target="_blank" href="") 期门穴
+                a(target="_blank" href="") 青灵穴
+              span.xuewei_text
+                a(target="_blank" href="") 膀胱俞
+                a(target="_blank" href="") 缺盆穴
+                a(target="_blank" href="") 颧髎穴
+              span.xuewei_text
+                a(target="_blank" href="") 前谷穴
+                a(target="_blank" href="") 前顶穴
+                a(target="_blank" href="") 丘墟穴
+              span.xuewei_text
+                a(target="_blank" href="") 清冷渊穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin R
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="") 人迎穴
+                a(target="_blank" href="") 乳中穴
+                a(target="_blank" href="") 乳根穴
+              span.xuewei_text
+                a(target="_blank" href="") 日月穴
+                a(target="_blank" href="") 然谷穴
+                a(target="_blank" href="") 丝竹空
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin S
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="") 少商穴
+                a(target="_blank" href="") 少海穴
+                a(target="_blank" href="") 少泽穴
+              span.xuewei_text
+                a(target="_blank" href="") 少府穴
+                a(target="_blank" href="") 少冲穴
+                a(target="_blank" href="") 三阴交
+              span.xuewei_text
+                a(target="_blank" href="") 三间穴
+                a(target="_blank" href="") 三焦俞
+                a(target="_blank" href="") 三阳络
+              span.xuewei_text
+                a(target="_blank" href="") 手五里
+                a(target="_blank" href="") 手三里
+                a(target="_blank" href="") 四渎穴
+              span.xuewei_text
+                a(target="_blank" href="") 四满穴
+                a(target="_blank" href="") 四白穴
+                a(target="_blank" href="") 商阳穴
+              span.xuewei_text
+                a(target="_blank" href="") 商曲穴
+                a(target="_blank" href="") 商丘穴
+                a(target="_blank" href="") 神门穴
+              span.xuewei_text
+                a(target="_blank" href="") 神庭穴
+                a(target="_blank" href="") 神阙穴
+                a(target="_blank" href="") 神封穴
+              span.xuewei_text
+                a(target="_blank" href="") 神藏穴
+                a(target="_blank" href="") 水泉穴
+                a(target="_blank" href="") 水突穴
+              span.xuewei_text
+                a(target="_blank" href="") 水道穴
+                a(target="_blank" href="") 水沟穴
+                a(target="_blank" href="") 水分穴
+              span.xuewei_text
+                a(target="_blank" href="") 上巨虚
+                a(target="_blank" href="") 上廉穴
+                a(target="_blank" href="") 上髎穴
+              span.xuewei_text
+                a(target="_blank" href="") 上脘穴
+                a(target="_blank" href="") 上关穴
+                a(target="_blank" href="") 食窦穴
+              span.xuewei_text
+                a(target="_blank" href="") 石关穴
+                a(target="_blank" href="") 率谷穴
+                a(target="_blank" href="") 素髎穴
+              span.xuewei_text
+                a(target="_blank" href="") 束骨穴
+                a(target="_blank" href="") 申脉穴
+                a(target="_blank" href="") 身柱穴
+              span.xuewei_text
+                a(target="_blank" href="") 肾俞穴
+                a(target="_blank" href="") 神堂穴
+                a(target="_blank" href="") 石门穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin T
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="") 天府穴
+                a(target="_blank" href="") 天突穴
+                a(target="_blank" href="") 天池穴
+              span.xuewei_text
+                a(target="_blank" href="") 天泉穴
+                a(target="_blank" href="") 天柱穴
+                a(target="_blank" href="") 天鼎穴
+              span.xuewei_text
+                a(target="_blank" href="") 天井穴
+                a(target="_blank" href="") 天髎穴
+                a(target="_blank" href="") 天牖穴
+              span.xuewei_text
+                a(target="_blank" href="") 天宗穴
+                a(target="_blank" href="") 天窗穴
+                a(target="_blank" href="") 天容穴
+              span.xuewei_text
+                a(target="_blank" href="") 天冲穴
+                a(target="_blank" href="") 天枢穴
+                a(target="_blank" href="") 天溪穴
+              span.xuewei_text
+                a(target="_blank" href="") 太渊穴
+                a(target="_blank" href="") 太溪穴
+                a(target="_blank" href="") 太白穴
+              span.xuewei_text
+                a(target="_blank" href="") 太乙穴
+                a(target="_blank" href="") 头维穴
+                a(target="_blank" href="") 头临泣
+              span.xuewei_text
+                a(target="_blank" href="") 头窍阴
+                a(target="_blank" href="") 听会穴
+                a(target="_blank" href="") 听宫穴
+              span.xuewei_text
+                a(target="_blank" href="") 瞳子髎
+                a(target="_blank" href="") 条口穴
+                a(target="_blank" href="") 通里穴
+              span.xuewei_text
+                a(target="_blank" href="") 通天穴
+                a(target="_blank" href="") 太冲穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin W
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="") 温溜穴
+                a(target="_blank" href="") 外关穴
+                a(target="_blank" href="") 外陵穴
+              span.xuewei_text
+                a(target="_blank" href="") 腕骨穴
+                a(target="_blank" href="") 完骨穴
+                a(target="_blank" href="") 五枢穴
+              span.xuewei_text
+                a(target="_blank" href="") 维道穴
+                a(target="_blank" href="") 胃俞穴
+                a(target="_blank" href="") 委中穴
+              span.xuewei_text
+                a(target="_blank" href="") 委阳穴
+                a(target="_blank" href="") 五处穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin X
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="") 侠白穴
+                a(target="_blank" href="") 郄门穴
+                a(target="_blank" href="") 下廉穴
+              span.xuewei_text
+                a(target="_blank" href="") 下关穴
+                a(target="_blank" href="") 下脘穴
+                a(target="_blank" href="") 下巨虚
+              span.xuewei_text
+                a(target="_blank" href="") 下髎穴
+                a(target="_blank" href="") 行间穴
+                a(target="_blank" href="") 膝关穴
+              span.xuewei_text
+                a(target="_blank" href="") 消泺穴
+                a(target="_blank" href="") 屋翳穴
+                a(target="_blank" href="") 血海穴
+              span.xuewei_text
+                a(target="_blank" href="") 悬枢穴
+                a(target="_blank" href="") 悬颅穴
+                a(target="_blank" href="") 悬钟穴
+              span.xuewei_text
+                a(target="_blank" href="") 心俞穴
+                a(target="_blank" href="") 小肠俞
+                a(target="_blank" href="") 小海穴
+              span.xuewei_text
+                a(target="_blank" href="") 陷谷穴
+                a(target="_blank" href="") 囟会穴
+                a(target="_blank" href="") 胸乡穴
+              span.xuewei_text
+                a(target="_blank" href="") 胃仓穴
+                a(target="_blank" href="") 悬厘穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin Y
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="") 云门穴
+                a(target="_blank" href="") 鱼际穴
+                a(target="_blank" href="") 玉枕穴
+              span.xuewei_text
+                a(target="_blank" href="") 彧中穴
+                a(target="_blank" href="") 迎香穴
+                a(target="_blank" href="") 龈交穴
+              span.xuewei_text
+                a(target="_blank" href="") 阴交穴
+                a(target="_blank" href="") 阴市穴
+                a(target="_blank" href="") 阴郄穴
+              span.xuewei_text
+                a(target="_blank" href="") 阴包穴
+                a(target="_blank" href="") 阴廉穴
+                a(target="_blank" href="") 阴陵泉
+              span.xuewei_text
+                a(target="_blank" href="") 阳白穴
+                a(target="_blank" href="") 阳溪穴
+                a(target="_blank" href="") 阳谷穴
+              span.xuewei_text
+                a(target="_blank" href="") 阴都穴
+                a(target="_blank" href="") 阳池穴
+                a(target="_blank" href="") 隐白穴
+              span.xuewei_text
+                a(target="_blank" href="") 俞府穴
+                a(target="_blank" href="") 膺窗穴
+                a(target="_blank" href="") 翳风穴
+              span.xuewei_text
+                a(target="_blank" href="") 幽门穴
+                a(target="_blank" href="") 涌泉穴
+                a(target="_blank" href="") 殷门穴
+              span.xuewei_text
+                a(target="_blank" href="") 养老穴
+                a(target="_blank" href="") 腰俞穴
+                a(target="_blank" href="") 腰阳关
+              span.xuewei_text
+                a(target="_blank" href="") 哑门穴
+                a(target="_blank" href="") 液门穴
+                a(target="_blank" href="") 譩譆穴
+              span.xuewei_text
+                a(target="_blank" href="") 意舍穴
+                a(target="_blank" href="") 阴谷穴
+                a(target="_blank" href="") 阳纲穴
+              span.xuewei_text
+                a(target="_blank" href="") 渊腋穴
+                a(target="_blank" href="") 印堂穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin Z
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="") 中府穴
+                a(target="_blank" href="") 中冲穴
+                a(target="_blank" href="") 中极穴
+              span.xuewei_text
+                a(target="_blank" href="") 中渚穴
+                a(target="_blank" href="") 中庭穴
+                a(target="_blank" href="") 中枢穴
+              span.xuewei_text
+                a(target="_blank" href="") 中髎穴
+                a(target="_blank" href="") 中封穴
+                a(target="_blank" href="") 中都穴
+              span.xuewei_text
+                a(target="_blank" href="") 中注穴
+                a(target="_blank" href="") 中脘穴
+                a(target="_blank" href="") 足临泣
+              span.xuewei_text
+                a(target="_blank" href="") 足三里
+                a(target="_blank" href="") 足五里
+                a(target="_blank" href="") 足窍阴
+              span.xuewei_text
+                a(target="_blank" href="") 足通谷
+                a(target="_blank" href="") 章门穴
+                a(target="_blank" href="") 周荣穴
+              span.xuewei_text
+                a(target="_blank" href="") 秩边穴
+                a(target="_blank" href="") 支沟穴
+                a(target="_blank" href="") 支正穴
+              span.xuewei_text
+                a(target="_blank" href="") 至阳穴
+                a(target="_blank" href="") 至阴穴
+                a(target="_blank" href="") 肘髎穴
+              span.xuewei_text
+                a(target="_blank" href="") 照海穴
+                a(target="_blank" href="") 子宫穴
+                a(target="_blank" href="") 志室穴
+              span.xuewei_text
+                a(target="_blank" href="") 筑宾穴
+                a(target="_blank" href="") 中膂俞
+                a(target="_blank" href="") 辄筋穴
+
+        div.tab_cItem(id='check_tab')
 
 block js
   script(src="/js/tab.js")
