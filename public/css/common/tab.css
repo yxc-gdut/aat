@@ -38,6 +38,19 @@
     padding-left: 1em;
     transition-property: all;
     transition-duration: 500ms;
+    color: #111;
+}
+
+.tab_navItem_a{
+    display: block;
+    line-height: 50px;
+    text-decoration: none;
+    color: #111;
+}
+
+.tab_navItem_a:visited, .tab_navItem_a:hover{
+    text-decoration: none;
+    color: #111;
 }
 
 .tab_navItem:hover {

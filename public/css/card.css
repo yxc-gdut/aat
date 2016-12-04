@@ -60,6 +60,7 @@
     background: #fff;
     font-size: 14px;
     line-height: 20px;
+    overflow:hidden;
 }
 
 .info {
@@ -167,4 +168,16 @@
     margin-top: -40px;
     left: 50%;
     margin-left: -40px;
+}
+
+
+.product_img1{
+    display:block;
+    height: 460px;
+    background: url(/img/product/index1.jpg) no-repeat center center;
+}
+.product_img2{
+    display:block;
+    height: 460px;
+    background: url(/img/product/index2.jpg) no-repeat center center;
 }

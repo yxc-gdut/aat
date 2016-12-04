@@ -12,6 +12,11 @@ html
     div(class="head")
       div(class="headW")
         div(class="logo")
+        div(class="logo_title")
+          span.logo_title_b 爱
+          span.logo_title_n 在分享
+          span.logo_title_b 艾
+          span.logo_title_n 在行动
         div(class="nav" id="nav")
           div(class="moveItem" id="moveItem")
           ul(class="navList" id="navList")
@@ -35,6 +40,17 @@ html
             //  a(href="/contact") 在线咨询
     block content
 
+    div(class="floatWin")
+      img.fw_img(src="/img/weixinqr.png")
+      p.fw_item
+        span.fw_item_label 微信:
+        span.fw_item_value L234537021
+      p.fw_item
+        span.fw_item_label QQ:
+        img.fw_item_qq(style="CURSOR: pointer" onclick="javascript:window.open('http://b.qq.com/webc.htm?new=0&sid=234537021&o=aiaitie.com&q=7', '_blank', 'height=502, width=644,toolbar=no,scrollbars=no,menubar=no,status=no');"  border="0" src="http://wpa.qq.com/pa?p=1:234537021:1" alt="点击这里给我发消息")
+      p.fw_item
+        span.fw_item_label 电话:
+        span.fw_item_value 18923842830
 
     div(class="foot")
       span.foot_c Copyright from Mongking,Lou 2016.8

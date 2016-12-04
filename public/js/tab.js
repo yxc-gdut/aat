@@ -1,7 +1,6 @@
 $(function(){
     var $tab_nav = $(".tab_nav"),
-        activeClass = 'active',
-        duration = 300;
+        activeClass = 'active';
 
     $tab_nav.on("click", '.tab_navItem', function(){
         var $this = $(this),
@@ -12,6 +11,11 @@ $(function(){
         $this.addClass(activeClass);
 
         show($this.data().id);
+    })
+
+    $tab_nav.on("click", '.tab_navItem_a', function(e){
+        e.stopPropagation();
+        e.preventBubble();
     })
 
     function show(id){
