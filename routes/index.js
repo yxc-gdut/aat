@@ -33,7 +33,7 @@ router.get('/join', function(req, res, next) {
 router.get('/shop', function(req, res, next) {
   res.render('shop', { title: '艾灸知识大全丨艾艾贴，引领健康养生新时尚', selected:'shop'  });
 });
-router.get('/api', function(req, res, next) {
+router.post('/api/*', function(req, res, next) {
   api.main(req, res, next);
 });
 

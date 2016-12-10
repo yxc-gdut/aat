@@ -23,7 +23,7 @@ $(function(){
                 alert("提交成功");
             },
             error:function(XMLHttpRequest, textStatus, errorThrown){
-
+                alert("提交失败，请稍后再试")
             }
         })
     })
