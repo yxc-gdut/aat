@@ -7,7 +7,13 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: '艾艾贴', selected:'index' });
 });
 router.get('/news/1', function(req, res, next) {
-  res.render('news/1', { title: '艾灸知识大全丨艾艾贴，引领健康养生新时尚', selected:'news' });
+  res.render('news/1', { title: '三分钟了解艾灸', selected:'news' });
+});
+router.get('/news/2', function(req, res, next) {
+  res.render('news/2', { title: '艾灸知识大全丨艾艾贴，引领健康养生新时尚', selected:'news' });
+});
+router.get('/news/3', function(req, res, next) {
+  res.render('news/3', { title: '艾养生丨红豆薏米粥祛湿？90%的人都犯了这几个错误', selected:'news' });
 });
 router.get('/aat', function(req, res, next) {
   res.render('aat', { title: '艾灸知识大全丨艾艾贴，引领健康养生新时尚', selected:'aat' });
