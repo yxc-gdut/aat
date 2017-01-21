@@ -21,7 +21,7 @@ $(function(){
     function show(id){
         var $tab_c_active = $(".tab_c ." + activeClass);
         var $active = $("#"+id);
-        $tab_c_active.slideUp()
+        $tab_c_active.hide();
         $active.show().addClass(activeClass);
     }
 })

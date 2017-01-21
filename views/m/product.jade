@@ -1,0 +1,89 @@
+extends layout
+
+block css
+  link(rel='stylesheet', href='/m/css/common/tab.css')
+  link(rel='stylesheet', href='/m/css/aat.css')
+
+block content
+  div.s_pic
+  div.tab_wrap
+    div.tab
+      ul.tab_nav
+        li.tab_navTitle 产品展示
+        li.tab_navItem.active(id='brand' data-id='useMethod_tab') 使用方法
+        li.tab_navItem(id='brand' data-id='product_tab') 产品特性
+        li.tab_navItem(id='brand' data-id='target_tab') 适合人群
+
+      div.tab_c
+        div.tab_cItem.active(id='useMethod_tab')
+          p.tab_article_h3 艾艾贴产品：
+          br
+          p.tab_article_c 艾艾贴精选大别山陈年艾草，选材、挑选、敲打、提纯、晾晒、成型，六大工艺铸就高质量产品！
+          p.tab_article_c 艾灸让您远离虚、远离寒、远离湿！
+          br
+          img.tab_article_img(src="/m/img/product/usemethod/1.jpg")
+          br
+          p.tab_article_h3 艾艾贴施灸禁忌：
+          br
+          p.tab_article_c 1、饭前后1小时，不宜施灸。
+          p.tab_article_c 2、激烈运动后不能施灸。
+          p.tab_article_c 3、孕妇禁灸。
+          p.tab_article_c 4、身体发炎破皮部位禁灸。
+          p.tab_article_c 5、极度疲劳、过度饥饿、太渴、醉酒、妇女月经期，不宜施灸。
+          p.tab_article_c 6、现代中医禁灸的穴位。
+          p.tab_article_c 7、施灸期间不吃或少吃寒凉食物：如西瓜、香蕉、螃蟹、冷饮、凉茶等。
+          br
+          p.tab_article_h3 使用方法：
+          br
+          p.tab_article_c 撕开底部粘纸，点燃艾艾贴，贴在身体相应部位，当艾柱烧至止燃线后会自动熄灭，冷却后收集艾灰，取下底座。一般部位连灸两至三遍即可。
+          img.tab_article_img(src="/m/img/product/usemethod/2.jpg")
+
+        div.tab_cItem(id='product_tab')
+          p.tab_article_h3 1、调理呼吸系统：
+          br
+          p.tab_article_c 可以通过刺激经络来改善鼻部血液循环，使鼻部通过艾灸后肺脏本身微循环灌注量增加，提升鼻部通气，从而得到改善。
+          img.tab_article_img(src="/m/img/product/product/1.jpg")
+          br
+          p.tab_article_h3 2、改善睡眠问题：
+          br
+          p.tab_article_c 艾灸可以改善大脑功能和恢复脑细胞代谢，使失眠多梦等问题得到缓解。
+          img.tab_article_img(src="/m/img/product/product/2.jpg")
+          br
+          p.tab_article_h3 3、调理女性问题：
+          br
+          p.tab_article_c 作用全身经络，改善身体器官血液循环，促进局部微循环，加快细胞新陈代谢机能，暖宫祛寒、又可充足元气、充盈气血，是女性美丽健康的根本。
+          img.tab_article_img(src="/m/img/product/product/3.jpg")
+
+        div.tab_cItem(id='target_tab')
+          p.tab_article_h3 艾艾貼適合人群
+          img.tab_article_img(src="/m/img/product/target/1.jpg")
+          p.tab_article_h3 皮肤好、肺气足
+          p.tab_article_c 适合人群：针对皮肤不好，如皮肤干燥、粗糙、毛囊炎、脱屑，气虚型便秘的人。
+          p.tab_article_c 主要作用：提升肺和大肠经的气血能量，开阔胸腔，增加肠蠕动，平衡呼吸系统，预防便秘增强人体免疫能力。
+          br
+          p.tab_article_h3 韵味生、内平衡
+          p.tab_article_c 适合人群：肥胖、内分泌失调等人群。
+          p.tab_article_c 主要作用：帮助平衡内分泌系统，增强循环系统的功能，预防肥胖、失眠等亚健康问题。
+          br
+          p.tab_article_h3 常开心、胸中爽
+          p.tab_article_c 适合人群：神经衰弱、失眠、多梦、健忘、记忆力下降、注意力不集中、心悸、经常胸闷、心情抑郁等。
+          p.tab_article_c 主要作用：宁心神，可以有效改善睡眠质量，舒缓紧张的压力，平衡焦虑的情绪，加快体内循环。
+          br
+          p.tab_article_h3 心情好、肝气理
+          p.tab_article_c 适合人群：爱生闷气、面部有色斑、易怒易燥、情绪低落、视力下降、乳房胀痛、小腹胀气、经常抽筋等人群。
+          p.tab_article_c 主要作用：疏肝理气。
+          br
+          p.tab_article_h3 肾气足、阴阳平
+          p.tab_article_c 适合人群：面色暗沉、早衰、色斑、疲劳、自汗、盗汗、脱发等问题人群。
+          p.tab_article_c 主要作用：调节身体的阴阳平衡，增强人体免疫力，补充体力、精力。
+          br
+          p.tab_article_h3 身体强、气血活
+          p.tab_article_c 适合人群：免疫力低下、身体虚弱、怕冷、烦躁、易怒、失眠多梦、头晕目眩、神经衰弱、健忘等。
+          p.tab_article_c 主要作用：生发阳气、活血通络、增强人体免疫力。
+          br
+          p.tab_article_h3 脾胃和、五脏安
+          p.tab_article_c 适合人群：面部肌肉松弛老化、脸色暗黄、眼袋、口苦口腻、湿气重等人群。
+          p.tab_article_c 主要作用：提升脾胃的血气、排出体内的浊气。
+
+block js
+  script(src="/m/js/tab.js")

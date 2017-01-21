@@ -1,0 +1,48 @@
+extends layout
+
+block css
+  link(rel='stylesheet', href='/m/css/common/tab.css')
+  link(rel='stylesheet', href='/m/css/aat.css')
+  link(rel='stylesheet', href='/m/css/contact.css')
+
+block content
+  div.s_pic
+  div.tab_wrap
+    div.tab
+      ul.tab_nav
+        li.tab_navItem 关于我们
+        li.tab_navItem 认识艾艾贴
+        li.tab_navItem 艾艾贴公司介绍
+        li.tab_navItem 公司资质
+        li.tab_navItem 代理加盟
+        li.tab_navItem 联系我们
+        li.tab_navItem 在线咨询
+      div.tab_c
+        form(id)
+          p.contacts_desc 如果您有艾艾帖代理、艾艾帖产品使用等问题可以在这里提交，我们会第一时间回复您。
+          div.contacts_item
+            span.contacts_left
+              label.contacts_label 姓名：
+              input.contacts_input(id="name" name="name")
+            span.contacts_left
+              label.contacts_label 电话：
+              input.contacts_input(id="phone" name="phone")
+          div.contacts_item
+            span.contacts_left
+              label.contacts_label 微信：
+              input.contacts_input(id="wechat" name="wechat")
+            span.contacts_left
+              label.contacts_label 邮箱：
+              input.contacts_input(id="email" name="email")
+          div.contacts_item
+            label.contacts_label 问题内容：
+            textarea.contacts_area(id="content" name="content")
+          div.contacts_item
+            label.contacts_label 验证码：
+            input.contacts_input(id="code" name="code")
+          div.contacts_item
+            a.contacts_btn(id="contactBtn" href="javascript:void(0);") 确认提交
+
+block js
+  script(src="/m/js/tab.js")
+  script(src="/m/js/contact.js")

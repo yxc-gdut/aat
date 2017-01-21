@@ -1,0 +1,578 @@
+extends layout
+
+block css
+  link(rel='stylesheet', href='/m/css/common/tab.css')
+  link(rel='stylesheet', href='/m/css/aat.css')
+  link(rel='stylesheet', href='/m/css/aijiu.css')
+
+block content
+  div.s_pic
+  div.tab_wrap
+    div.tab
+      ul.tab_nav
+        li.tab_navTitle 艾灸知识
+        li.tab_navItem(data-id='yansheng_tab') 艾灸养生
+        li.tab_navItem(data-id='xuewei_tab') 艾灸穴位
+        li.tab_navItem(data-id='download_tab')
+          a.tab_navItem_a(href="https://pan.baidu.com/s/1skFqFyX" target="_blank") 资料下载
+
+      div.tab_c
+        div.tab_cItem(id='yansheng_tab')
+
+        div.tab_cItem(id='xuewei_tab')
+          p.tab_article_h3
+            span.xuewei_pinyin B
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492016&idx=1&sn=75d1cde4c0beb5d22b87c8d8922efc2b#rd") 臂臑穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492017&idx=1&sn=a5585afc4510f327faa216e2adcf250a#rd") 不容穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492018&idx=1&sn=46d735596b6692013a288a0f9579016e#rd") 髀关穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492019&idx=1&sn=5db85ae9c5e08cf45d020663282b54b3#rd") 百会穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492020&idx=1&sn=8b634285351be3b302a69a251d6940c0#rd") 百虫窝
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492021&idx=1&sn=8be9624e78a8b7a781415ecbe1fa4496#rd") 秉风穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492022&idx=1&sn=22a81aac25c9497995ea54e8f04db560#rd") 步廊穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492023&idx=1&sn=ecbb26b86fd4dea635ff0f5e11441c83#rd") 本神穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492040&idx=1&sn=b4e00deaf164ffc9e22895469d7ceffe#rd") 白环俞
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492025&idx=1&sn=679a34c00b9840c39f78d0561a64941a#rd") 胞肓穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin C
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492026&idx=1&sn=2544c3ea01a2b90cda08c43f2f1fab0f#rd") 尺泽穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492027&idx=1&sn=01ce9b2f7bed17c93c0f1e170eb3bc25#rd") 攒竹穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492028&idx=1&sn=7dcb7507f082dd759e83ffc746ec60bf#rd") 次髎穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492029&idx=1&sn=4c18f24615475c822ac50518f817974d#rd") 承浆穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492030&idx=1&sn=be111761eb74c1812f3288bfd5ef4c6d#rd") 承泣穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492031&idx=1&sn=d5edab9781b34542905531c2a66f4367#rd") 承扶穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492032&idx=1&sn=8dfde89616d00d419aa1c657e0c8f5e8#rd") 承满穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492033&idx=1&sn=9d34e6131d22830f13bbc41fe93b4201#rd") 承筋穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492035&idx=1&sn=0997399222091013b55d85604ef6d307#rd") 承山穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492036&idx=1&sn=1a52485929b7893d62d3a1ca7c904756#rd") 冲门穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492037&idx=1&sn=b7585453fa2259ec0b98305911e97d48#rd") 冲阳穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492038&idx=1&sn=1303036e698873f95045dc5630363c5c#rd") 长强穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492039&idx=1&sn=0c058501a71e10c2e7d2d996239afe41#rd") 承光穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin D
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492041&idx=1&sn=e7411e3c6675d6a404e7b0662a9160fe#rd") 地仓穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492044&idx=1&sn=a00be2cf49f16601b33f2a4c91b251f6#rd") 地机穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492045&idx=1&sn=8aa0376aedbbe8794c2fa8c93e11a5d5#rd") 大巨穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492046&idx=1&sn=8547b9be653acf3d408c922cdd00f5fd#rd") 大都穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492047&idx=1&sn=97d11927cd90cc878b9eb299bf1d86a1#rd") 大迎穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492049&idx=1&sn=a3180906fb784f47d0f7dd52aea76f4a#rd") 大横穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492050&idx=1&sn=57e9fc391a9f7af6cb8ca36e530cf8db#rd") 大包穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492055&idx=1&sn=abe811726a45419a64aa374cfd69cd8f#rd") 大椎穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492056&idx=1&sn=62ab600944d57b8282f5ce130020e3e0#rd") 大赫穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492057&idx=1&sn=c0587975d002d35087b31aa0268e38d7#rd") 大肠俞
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492058&idx=1&sn=bd712dda62e3ed20fcd5cc5045c3d14b#rd") 大杼穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492059&idx=1&sn=bbe89c13e0aee3713bb43f8c263363fc#rd") 大陵穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492060&idx=1&sn=0929554932b761e943c419ef1ddbf8bf#rd") 大钟穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492061&idx=1&sn=684a2ac33072814b7714e29f70b59e9a#rd") 大敦穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492062&idx=1&sn=cd5c7ec3a1dbb62d75e23147556ce6fa#rd") 兑端穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492063&idx=1&sn=5d03d626e470c125e7a574575392b72e#rd") 犊鼻穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492064&idx=1&sn=896e189380e0702120c8f6bc6485fde7#rd") 膻中穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492066&idx=1&sn=877650a7ccacb56ee2c975dd163dd9ce#rd") 督俞穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492067&idx=1&sn=e906c60ee6be36cea2e8ec919413ff01#rd") 定喘穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492068&idx=1&sn=b21c3d5f355eab70534add286ff7d76c#rd") 带脉穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492069&idx=1&sn=76cc245a0f5cbd3724cb45cf2f6ccb1e#rd") 胆俞穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin E
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492070&idx=1&sn=181b0826dbced2d8d56ef67689403a4f#rd") 二间穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492071&idx=1&sn=abafbc9d4aa67a608ec20964df1776e1#rd") 耳门穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492072&idx=1&sn=c2d6af104b1e30e7ead53b22e0a0ac21#rd") 耳尖
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin F
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492074&idx=1&sn=bebbd579943727880fd91878a069d385#rd") 扶突穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492075&idx=1&sn=9ecff9cda6fc7ffde5ad0295fd77320b#rd") 丰隆
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492076&idx=1&sn=df32575ab61fb06d02533da319737a03#rd") 府舍穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492077&idx=1&sn=b41e62de5599e0d8631f22349a8c9a03#rd") 风门穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492078&idx=1&sn=c6718f8c229e6b04fb30f224c0791f33#rd") 风府穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492079&idx=1&sn=7d4eccf045641d95b1ec152593defa4e#rd") 风市穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492080&idx=1&sn=12df0297cc68a3874042907c2804c6e5#rd") 风池穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492081&idx=1&sn=d590a0cfcf10b0184cc1f36c65c3a70e#rd") 飞扬穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492082&idx=1&sn=a7a7611bbb0357c8e97b724d616e2a8c#rd") 腹结穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492083&idx=1&sn=bbf298fb9ab4ccbb907ef4a4e8c664a3#rd") 腹通谷
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492084&idx=1&sn=336b55217f235e19aa170f6802edc406#rd") 腹哀穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492085&idx=1&sn=be9fa1c1adc121362597c2bbd24ba04a#rd") 复溜穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492086&idx=1&sn=8a49c40b57e235a4817a6f8e5dce4c7a#rd") 肺俞穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492087&idx=1&sn=dfa52cd41b656b1aecf9118d3d26dd85#rd") 伏兔穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492088&idx=1&sn=ad593bc3c70e62c52eb4eface082dc29#rd") 浮白穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492089&idx=1&sn=9257b80ff07a6459eab297e32c37e176#rd") 浮郄穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492090&idx=1&sn=99cf8ded157ef6e981327aa57351aeaf#rd") 附分穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492091&idx=1&sn=14e5a8d76b36a87b4dd1561e1ae65f55#rd") 跗阳穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin G
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492092&idx=1&sn=223d8b794341a6521ddf0bceb5bd24d3#rd") 肝俞穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492093&idx=1&sn=373f8b23d7d0846fda54b80194c26333#rd") 归来穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492094&idx=1&sn=55f47136cefecd1ce491c60037763718#rd") 公孙穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492095&idx=1&sn=ed8476045c5b4a68aebda632ec240bf7#rd") 关冲穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492096&idx=1&sn=98111fc00eca9beef963e27dc5e6ef4a#rd") 关元穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492097&idx=1&sn=e3724f0b78f831748cb4a5c221d2699d#rd") 关门穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492098&idx=1&sn=798c0cc1a249ed417b10a558e8dc198a#rd") 关元俞
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492099&idx=1&sn=a7c17d452bd78188c2ab1ac9e05d5a4b#rd") 光明穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492100&idx=1&sn=a50cddb6645680fc08ef9073dedba7c3#rd") 膈俞穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492101&idx=1&sn=080f7d5774251d2f2607cf51e41d0fad#rd") 膏肓穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492102&idx=1&sn=ffc9e18c77fbd12fb0635a89c7610cce#rd") 膈关穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin H
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492103&idx=1&sn=46dc85567b488d709abdf630e033bb35#rd") 合谷穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492104&idx=1&sn=b78ef0b0e197e26f2557ebaaf0a2b8d9#rd") 合阳穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492105&idx=1&sn=007d3778eeac86a411129b87f8ac7baa#rd") 后顶穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492106&idx=1&sn=7f92539722db93be01fb7dc55c0f18fa#rd") 后溪穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492107&idx=1&sn=450bd7ecb1d2fbfcf8a200e22b447205#rd") 横骨穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492108&idx=1&sn=1a4d08041b44e413e3c7dd954847af5c#rd") 会阴穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492109&idx=1&sn=60105842aeeded6dd95828b79c17c51c#rd") 会宗穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492110&idx=1&sn=34be3f2617e6c884c770eacd684cad8e#rd") 鹤顶穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492111&idx=1&sn=c8f9c981d744c86fba3e5ee95b984e3d#rd") 华盖穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492112&idx=1&sn=178eea1e9ffaa92ecf02ff33ddc9e1d1#rd") 滑肉门
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492113&idx=1&sn=92d66dd1700e573e74e1d98103064800#rd") 颔厌穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492114&idx=1&sn=f88bddb02af83b4913986a78a2ab264b#rd") 环跳穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492115&idx=1&sn=a4232bdced2d7e5f8dfb05c5515b37ad#rd") 会阳穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492116&idx=1&sn=ffb8bcbb029e63b8485bdc373f3a3d8f#rd") 肓俞穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492117&idx=1&sn=a7c659f9317c05675e184bda39d3f0dc#rd") 魂门穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492118&idx=1&sn=9cbcb6d35ebdb2a5b84a1788f99dbc64#rd") 肓门穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin J
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492119&idx=1&sn=cd96344b84c84f47b466c3875d619fa6#rd") 经渠穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492120&idx=1&sn=95785ecf919805f41863ad6806865af5#rd") 金津玉液
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492121&idx=1&sn=c8f5f0d160dbc3a51e3169b3fe9bfea9#rd") 金门穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492122&idx=1&sn=26574e8c69faced370c5d0b1465413e4#rd") 京门穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492123&idx=1&sn=7c421edd5ce206b3a5d67a1e9053353f#rd") 京骨穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492124&idx=1&sn=e9d25db96975ec242d06b116b09dc2d7#rd") 睛明穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492125&idx=1&sn=19cac60299aeec88a5664e56c212704f#rd") 极泉穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492126&idx=1&sn=0bd029f5c9ddde9a696a9caa9285d24a#rd") 间使穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492127&idx=1&sn=b1df55e61cab8a6aed133618782dd035#rd") 解溪穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492129&idx=1&sn=de6c89d623bbbeca7f762c3c90586763#rd") 箕门穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492130&idx=1&sn=4b33ce2fceec0bbb97de3ca6920e2758#rd") 厥阴俞
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492131&idx=1&sn=93b8a87186468a14eb1439aed68f6818#rd") 交信穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492132&idx=1&sn=60bb3816cf872c98cffbaf7d8751958c#rd") 肩贞穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492133&idx=1&sn=f489fbec3b69055b88cd47f385c535c2#rd") 肩髎穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492145&idx=1&sn=2c27e15eae289e64ca62413db65be376#rd") 巨髎穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492133&idx=1&sn=f489fbec3b69055b88cd47f385c535c2#rd") 肩髃穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492134&idx=1&sn=a11f9d7e62c2b558add0566ffbdad723#rd") 肩中俞
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492135&idx=1&sn=15b8c71e8d5d4ea7e73292330dab9610#rd") 肩外俞
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492136&idx=1&sn=714ed93f8fb361ba405d9aaa180a6488#rd") 肩井穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492137&idx=1&sn=1988b7166674e0564dd85f412b23bcd2#rd") 脊中穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492138&idx=1&sn=689a6b6a4eb9673caa8dca3635f10019#rd") 角孙穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492139&idx=1&sn=3ab3aefa3580e2b08bd7d6a9c5fa95d8#rd") 居髎穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492140&idx=1&sn=0dc4f013c2a4527b3269032e928ecf87#rd") 巨阙穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492141&idx=1&sn=50e0dd06cca0cee81a8b053ada8cba5b#rd") 巨骨穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492142&idx=1&sn=cb506f25cdc6dc47404fc378e681d1dd#rd") 夹脊穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492143&idx=1&sn=f67a5b6f421da449aa1766fe93721fde#rd") 颊车穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492144&idx=1&sn=3eb1f3c15786d51dcfe32332749358f9#rd") 急脉穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin K
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492147&idx=1&sn=6767fa7067df41272f84223c915eafd1#rd") 孔最穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492148&idx=1&sn=c791b95d9bb0f3ddab5c59a8e5b29de7#rd") 昆仑穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492149&idx=1&sn=b9b62b3b56d707d4192cbbe889a7d683#rd") 库房穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492150&idx=1&sn=60a12c8d51aead2801234d140bd43c36#rd") 口禾髎
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin L
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492151&idx=1&sn=57275290e98ca5620f28db293b324a86#rd") 列缺穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492152&idx=1&sn=e7ad1122bf09a81fa86e12ddfb25c143#rd") 梁门穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492153&idx=1&sn=d03018f64c8800b2fd31c786f9a79286#rd") 梁丘穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492154&idx=1&sn=b0ab2ebe77ab9e58ec52eeaafb36d88c#rd") 灵墟穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492155&idx=1&sn=65a91465baad19e4dca9e8ea58441806#rd") 灵道穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492156&idx=1&sn=baec00a6df9791a5a193384766132a24#rd") 廉泉穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492157&idx=1&sn=758175838d441480b63b8cc04f19f8f8#rd") 蠡沟穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492158&idx=1&sn=a5e1a0c23e8a11e9ee108eb99a750c8a#rd") 落枕穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492159&idx=1&sn=ea54ab436baa8dfbbf4a2a3cf8e047b3#rd") 阑尾穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492160&idx=1&sn=45a0c2c2b0e4969fe9a126d1b0a9782c#rd") 漏谷穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492161&idx=1&sn=08ac6dd27ad7061632af6d0fd131e30f#rd") 厉兑穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492162&idx=1&sn=2ac39b9d39749ed0301f0f07af63e930#rd") 络却穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin M
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492163&idx=1&sn=fbe8e319cdc9850b60d37ac74aa5506b#rd") 眉冲穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492164&idx=1&sn=6af67e9dfeb888d6b314ba3e2383ea3a#rd") 命门穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin N
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492165&idx=1&sn=5da5bcd1bb90ee80dcfa5be1f4615bbc#rd") 内庭穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492166&idx=1&sn=bd8df23c022d0313851b4aa71201003a#rd") 内关穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492167&idx=1&sn=6099b1f5e6fbf8dc1b5308bfc599a11f#rd") 臑俞穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492168&idx=1&sn=70a5b26b043235f1d56abf5e8277e00f#rd") 臑会穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492170&idx=1&sn=be27d686935b420c1f4fcf69f0aa6c8f#rd") 脑户穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin P
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492171&idx=1&sn=4a77b26763d44847834a819baeb90626#rd") 偏历穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492172&idx=1&sn=ce81972be90b6d3f848a85e00a8d43e7#rd") 脾俞穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492173&idx=1&sn=116d6426885effce4d5b20a233d2773d#rd") 魄户穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492174&idx=1&sn=81be0f51db7157be506473843c10ba8c#rd") 仆参穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin Q
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492175&idx=1&sn=bf81b30bcacb517aa59f13a1310d877f#rd") 气冲穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492176&idx=1&sn=6947ec3207badf9139e62776ca6124c7#rd") 气舍穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492177&idx=1&sn=ba3a6ea45850f8175a4406c9d6775892#rd") 气户穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492178&idx=1&sn=2c9356befead38348a54965673077a1e#rd") 气海穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492179&idx=1&sn=b92650c08804b64b85f01a204d9ed384#rd") 气海俞
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492180&idx=1&sn=49b01521d945653f3041d72faae37a4e#rd") 气穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492181&idx=1&sn=11aae77a0b4a834353bb6f54889ef757#rd") 曲垣穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492182&idx=1&sn=08aca8c212200e768b0391882adc926a#rd") 曲差穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492183&idx=1&sn=c51825acc21f0ea865419c79d22a2618#rd") 曲鬓穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492184&idx=1&sn=fb783480bded082eca34efb1b667a955#rd") 曲池穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492192&idx=1&sn=187835b2842dc2831682783a3511eae1#rd") 曲泽穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492193&idx=1&sn=bd59943c75abb6cb99af257a2a322be6#rd") 曲泉穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492194&idx=1&sn=fb0a3863da213c7083469e6f246021e2#rd") 曲骨穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492195&idx=1&sn=295d063847108b8f40594f2d9357dbe6#rd") 期门穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492196&idx=1&sn=10f85f2330df8f68c141dc8ce2c6bcc3#rd") 青灵穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492198&idx=1&sn=53e011048c51733cb940e85c3e7e7ceb#rd") 膀胱俞
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492199&idx=1&sn=184561b34543baaf26e08657efb08c88#rd") 缺盆穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492202&idx=1&sn=55aa7d62ea989d5db17e2cb352007b89#rd") 颧髎穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492203&idx=1&sn=ed7e5e56efba6f0cd40de3f5d21652ee#rd") 前谷穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492204&idx=1&sn=fc23aaedb4b6f3a4fa9aa8e3923f33de#rd") 前顶穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492205&idx=1&sn=be64b14a306b1e38ecc8a8819b848060#rd") 丘墟穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492206&idx=1&sn=01296eed06635dd0cbab20cdd433fe6b#rd") 清冷渊穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin R
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492207&idx=1&sn=3de0e4dd9be8865abe426b423fda2956#rd") 人迎穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492208&idx=1&sn=a973dca8203980c896113f6007d889f7#rd") 乳中穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492210&idx=1&sn=86b044e9cdb34afc276bd507f57f31b9#rd") 乳根穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492211&idx=1&sn=cd8c1a0579abb2bfecbb50e3d967c470#rd") 日月穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492212&idx=1&sn=4976eeaf1c8c497ba6ea6c15e726adc3#rd") 然谷穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492213&idx=1&sn=07a22cf384259d880f4289fd4abb0495#rd") 丝竹空
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin S
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492214&idx=1&sn=772c3dc1bdb809efaf91e894bf6e1589#rd") 少商穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492215&idx=1&sn=32766b9600e619c0e0738b8abc72fb6c#rd") 少海穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492216&idx=1&sn=c41458516b2d73d357e1534a9197bb3e#rd") 少泽穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492217&idx=1&sn=b718f1b751be91e9babaa8f344cb45b9#rd") 少府穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492218&idx=1&sn=b84b8675f43d91bd699a0dfe4f85872d#rd") 少冲穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492219&idx=1&sn=7c8650656e1e8ef00380760ea4e6676f#rd") 三阴交
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492220&idx=1&sn=5d6a855e7c6f00bbe4044151feaf3763#rd") 三间穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492221&idx=1&sn=40e56ebff88c7e96fc033208c999b04d#rd") 三焦俞
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492222&idx=1&sn=5c649d36ea93dcb54b136a553447e24b#rd") 三阳络
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492223&idx=1&sn=d67407a4e7c05f87ec2434632cdf9df8#rd") 手五里
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492224&idx=1&sn=e490d05076a7586fee55cf2660eda39e#rd") 手三里
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492225&idx=1&sn=9735a489fdbc103f08e932ec2819c207#rd") 四渎穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&tempkey=zutBVpmlGURJHPa5JjIC2%2FtaLlmXk5ro%2F8JMhdZydtP5nYE54XHL8yZ2AlmfMpT4hk2Kc6XbBgd4D%2BEK1VwY65XRVHMjMY383X7MW7oYSETS%2FjzarhKIOi9OJ2D%2B9DNQ4%2BkSJP1aNjT6LCutENBRSw%3D%3D&#rd") 四满穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492226&idx=1&sn=d81e2b64553ab2357f0d6c88accac036#rd") 四白穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492227&idx=1&sn=f9424bcb0df654839f1375c5bc26ce72#rd") 商阳穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492228&idx=1&sn=fe693a6f91e704c71fccf0843716c928#rd") 商曲穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492229&idx=1&sn=11488db858e70638e1ee4fdf1f1e4089#rd") 商丘穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492230&idx=1&sn=21ceab439c8947a6c1976c70c6dd3844#rd") 神门穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492231&idx=1&sn=63b2737b1a376492f85391141011d40d#rd") 神庭穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492232&idx=1&sn=93a7b030b99552e4768b5837e55f0875#rd") 神阙穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492233&idx=1&sn=79ea822133e6598021bd88816f406fbb#rd") 神封穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492234&idx=1&sn=32983f6bb985b91f548da837eb41adce#rd") 神藏穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492236&idx=1&sn=d60b054fdff36da52e76d8c9ce242098#rd") 水泉穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492237&idx=1&sn=1f680a031d78fb9dec6057d3a6de4225#rd") 水突穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492238&idx=1&sn=f3331bb081a0a0653481aa96c4a453c4#rd") 水道穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492239&idx=1&sn=a368738285259756a357af12d17fb4f4#rd") 水沟穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492240&idx=1&sn=e3de45f9d274702327efbd631e9cfbaf#rd") 水分穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492241&idx=1&sn=c3a99f5a4231eaed33e4cb9030e6265c#rd") 上巨虚
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492242&idx=1&sn=43360b685ea647cb3d7403b3bddc7263#rd") 上廉穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492243&idx=1&sn=efe379dac02c133edc58bf50f55e433e#rd") 上髎穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492244&idx=1&sn=8af15503366a829adb3b4f1ba70ab761#rd") 上脘穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492245&idx=1&sn=cb966132efa5bce8b928d6ed06dea1d3#rd") 上关穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492246&idx=1&sn=03aa7eb1d59756197fbe4d074dcacf77#rd") 食窦穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492247&idx=1&sn=85773ccbce7bd5073177b44b92f512e2#rd") 石关穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492248&idx=1&sn=7c5e0f12e9e30c1c02ac505f00d4c572#rd") 率谷穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492249&idx=1&sn=8a9a7d13f80d764db6708747c7d49974#rd") 素髎穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492250&idx=1&sn=05c053d5f93a531a011611bdfc7885eb#rd") 束骨穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492251&idx=1&sn=ef29b554f235494f0e0c9f14817d7867#rd") 申脉穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&tempkey=zutBVpmlGURJHPa5JjIC2%2FtaLlmXk5ro%2F8JMhdZydtP7fQoLFIUneqCfBPNiYLlqWR1ICMdw7O8secVn3mMzqvCzN0RFeWGFj1kyMKM%2FSgrS%2FjzarhKIOi9OJ2D%2B9DNQl3JzVw2M4MNMuo34hLzdRw%3D%3D&#rd") 身柱穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492253&idx=1&sn=acb9ce6a2a0378ff24dff42c9a507e20#rd") 肾俞穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492254&idx=1&sn=6f03c8a1591744d827e5a55b217cc317#rd") 神堂穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492255&idx=1&sn=aec9c12c94998b5ada7445b1bd3ca40b#rd") 石门穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin T
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492256&idx=1&sn=d11d766c056d27097ad85d59694e4f11#rd") 天府穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492257&idx=1&sn=ab2c2b0469014220fe70a0360ff3629c#rd") 天突穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492258&idx=1&sn=bd8e9e0280183c268866f8683ab26101#rd") 天池穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492259&idx=1&sn=117db3d2404ba127f890b48e936cad14#rd") 天泉穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492260&idx=1&sn=2d7d62194d750dd9fabbd86fbc43a6ab#rd") 天柱穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492261&idx=1&sn=3e084435b86eeeb483b272da9932880b#rd") 天鼎穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492262&idx=1&sn=f7f74088c62fcebe7d1ef450b53711b8#rd") 天井穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492263&idx=1&sn=4e7d2ed6ba3e554d49a6b168c8f69fb4#rd") 天髎穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492264&idx=1&sn=dd2b302fafcac2e0f2b48b8aef1bb41b#rd") 天牖穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492265&idx=1&sn=82f07f0b9b84bd7d06fa08363ab94bc8#rd") 天宗穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492266&idx=1&sn=8688637075586b24e32f737b72767d69#rd") 天窗穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492267&idx=1&sn=f5f0fc3c12a5a44813e32ec586943fe1#rd") 天容穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492269&idx=1&sn=44816773a5b84d5f9b68dbfb425df19c#rd") 天冲穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492270&idx=1&sn=9b6f97aaef7b46149228248d06a6eba8#rd") 天枢穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492271&idx=1&sn=081a3963e2333a347a23cad71054dae5#rd") 天溪穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492272&idx=1&sn=47dc33685c9749212569099939ebc4d5#rd") 太渊穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&tempkey=zutBVpmlGURJHPa5JjIC2%2FtaLlmXk5ro%2F8JMhdZydtMjM9MUyndbARaa4IHo2r4gkjB5az9SSWL75%2B%2FJul%2BYeh4VI0Wgkv%2BetBJ5fs7Kks3S%2FjzarhKIOi9OJ2D%2B9DNQVhIOonf193hPcwvFqk4%2FZA%3D%3D&#rd") 太溪穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492273&idx=1&sn=aff9b5ffed892105c3dfdbe92ec3fa9a#rd") 太白穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492274&idx=1&sn=8a41bb50a7be7936fa78a1718e28b189#rd") 太乙穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492275&idx=1&sn=2be54da1c5ed64ba80489b5923ce8c7f#rd") 头维穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492276&idx=1&sn=feadba37d7371e572776ce32c1884fb2#rd") 头临泣
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492278&idx=1&sn=1e62e5655f915f688c4dfde2a59d7e1e#rd") 头窍阴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492280&idx=1&sn=56e373f8c039207421ea6e711a1af54d#rd") 听会穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492281&idx=1&sn=f5277404ca87873b3fc0669d42fa46db#rd") 听宫穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492283&idx=1&sn=f1027cef9e07b8219264f9b3fbc17d16#rd") 瞳子髎
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492284&idx=1&sn=5e608b59430802f846cef8e47038f255#rd") 条口穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492285&idx=1&sn=b5a676460e80e1520267a5c9daeeda84#rd") 通里穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492287&idx=1&sn=15b9b30a8817a764e8d989832d8cd699#rd") 通天穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&tempkey=zutBVpmlGURJHPa5JjIC2%2FtaLlmXk5ro%2F8JMhdZydtOYQ2RzKEIqhAQALs8UgxIfGB%2BZVNNRHUd8WoeQBTqA6E%2Fhke8Jwd34VsKp6qCFTQ%2FS%2FjzarhKIOi9OJ2D%2B9DNQYAOEaCV09Lf3A18szveNIQ%3D%3D&#rd") 太冲穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin W
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492288&idx=1&sn=3b19237d1d17a1f433889f0875c61e08#rd") 温溜穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492289&idx=1&sn=2eb943025edbd3cba4d73532d63bb449#rd") 外关穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492290&idx=1&sn=4a5594a29e4788c12d8d9a50d5f54e90#rd") 外陵穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492291&idx=1&sn=845353147c035a957820ede6fe2c1993#rd") 腕骨穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492292&idx=1&sn=8514b744c0ead6347433f473e99423eb#rd") 完骨穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492293&idx=1&sn=6b8428a2d1426f442adbca3b5e282d89#rd") 五枢穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&tempkey=zutBVpmlGURJHPa5JjIC2%2FtaLlmXk5ro%2F8JMhdZydtOw1sA%2BN4wFouc6HBbeihkc3It0RmVKKcFQAbW9KfjnTvEW0PPYc6Dyt9Q46NPYKQfS%2FjzarhKIOi9OJ2D%2B9DNQfo0Al0y6rsFUzaU%2FielkuQ%3D%3D&#rd") 维道穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492294&idx=1&sn=bcf0b28dedc57acefbe360bf230d4ef4#rd") 胃俞穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492295&idx=1&sn=6b29c72d4c741db48212e45897d60b73#rd") 委中穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492296&idx=1&sn=2ccd0adf18a4ab8dd2b066b8f9e1b14c#rd") 委阳穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492298&idx=1&sn=0bc69d8581b077141774aabf6f9b28c6#rd") 五处穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin X
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492299&idx=1&sn=844b69de7368867fd1605f7f268ca1ed#rd") 侠白穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492300&idx=1&sn=a2c4aa670b5bfb9c67e028c7b657f324#rd") 郄门穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492301&idx=1&sn=0e230fd53f61d254cd525de335bae3c6#rd") 下廉穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492302&idx=1&sn=477bb3e51086e0327a8d6995b96e44e5#rd") 下关穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492303&idx=1&sn=ba893f7fb4d12a742af5b585cf96df32#rd") 下脘穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492304&idx=1&sn=8c17a57d523d0756e5728fbd26cc8b04#rd") 下巨虚
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492305&idx=1&sn=225579fc17f7d028ee8b7600f1842eb2#rd") 下髎穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492306&idx=1&sn=dba9f5d4af64de35f438d645c6617d64#rd") 行间穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492307&idx=1&sn=16cae516e07640869440e48e88bba50f#rd") 膝关穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492308&idx=1&sn=238e046562cb2e84b42549626def275e#rd") 消泺穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492309&idx=1&sn=9af844276c5a7926fa72671bf6d4577b#rd") 屋翳穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492310&idx=1&sn=39ad5a2264d4aadf2df04966732bdeca#rd") 血海穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492311&idx=1&sn=6a759ef2dab3d78b020fd039aa5a54f7#rd") 悬枢穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492312&idx=1&sn=7430c7f17e9a3a8e4a2a6b1071bf164a#rd") 悬颅穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492313&idx=1&sn=d71ce95cbd8c710b9595d5dca64c2cda#rd") 悬钟穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492314&idx=1&sn=843ba16cd293ac260c4be170e5676331#rd") 心俞穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492315&idx=1&sn=35cb9bb6d0b664378ecc3595fab0b4d1#rd") 小肠俞
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492316&idx=1&sn=7212a6f98b30fbc6389b7fad867a69f2#rd") 小海穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492317&idx=1&sn=143e741b728aeadcc988f5a6cddefeff#rd") 陷谷穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492318&idx=1&sn=b20d2de467db3dfa352f8fabc8821b87#rd") 囟会穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492319&idx=1&sn=642a9d6064d65ca206f38ae04d39bdce#rd") 胸乡穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492320&idx=1&sn=1b344750f69c37e48ab48efd30df8a5f#rd") 胃仓穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492321&idx=1&sn=79aa6a98b0120b71a344497184424031#rd") 悬厘穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin Y
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492356&idx=1&sn=e1a2ab2f79166cbdf2eacd4895bb97ff#rd") 云门穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492357&idx=1&sn=19941f5fd67c87870685d83af94156d8#rd") 鱼际穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492358&idx=1&sn=e445af1e3fbda52049cf9f394ada06ca#rd") 玉枕穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492359&idx=1&sn=5b5a9a6e0dcc2845e7876a7859f4b8f9#rd") 彧中穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492360&idx=1&sn=62a0549fb460dcd87c58dbd004279ff6#rd") 迎香穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492361&idx=1&sn=85837d5326e853f525e7fc242fe22dd9#rd") 龈交穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492362&idx=1&sn=41080e945b9e3af20febecce8acbae9c#rd") 阴交穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492363&idx=1&sn=86dd19fbe504ca9a965950d13543fbc5#rd") 阴市穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492364&idx=1&sn=5a5befda1d34d95886c7a107d5c5e005#rd") 阴郄穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492365&idx=1&sn=78a09d8b36f248db77534ad7b9f78316#rd") 阴包穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492366&idx=1&sn=0a4657f2c2f82219ca0c6f04e5a211a4#rd") 阴廉穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492367&idx=1&sn=9ccbf6fa3ddf1881dee9d46a9a185f51#rd") 阴陵泉
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492368&idx=1&sn=3a973583ce814d66d177055470a2f84c#rd") 阳白穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492369&idx=1&sn=cbb07ee0a02c197d743444e1f24f7f06#rd") 阳溪穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492370&idx=1&sn=61152587ddebf841c76b749b6ec27fd5#rd") 阳谷穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492371&idx=1&sn=8d63b82d42670f57b7d7d1f69e7fd24d#rd") 阴都穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492372&idx=1&sn=f34dc6ea14f2d07764a454ab2bbf01f3#rd") 阳池穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492373&idx=1&sn=2e81652796bccfebf1a05699ea30f6a2#rd") 隐白穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492374&idx=1&sn=d7a0ae784dfa32d744e6d60c22b77f92#rd") 俞府穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492375&idx=1&sn=f8aa49fb4d9e95ec60fb4e36233ba950#rd") 膺窗穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492376&idx=1&sn=433b0c682f16d203d4e8ef2cd9f65cde#rd") 翳风穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492377&idx=1&sn=d4883458b1cbb9bcaa2d763773ea234e#rd") 幽门穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492378&idx=1&sn=1ab32c189782c5880c6be7a65172dcc1#rd") 涌泉穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492379&idx=1&sn=6236703a3cd363964a9b5289c3aa28ed#rd") 殷门穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492380&idx=1&sn=8f084f7ec0915a968d8c0a788d0b2d9d#rd") 养老穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492381&idx=1&sn=9f7a680e0a2fdb3f49a7091e1b48a073#rd") 腰俞穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492382&idx=1&sn=6ef3e0620b3854941f10ba98918bdfe6#rd") 腰阳关
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492383&idx=1&sn=a1f9bea611cce8da2f5a3901a61e413f#rd") 哑门穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492384&idx=1&sn=6fc84577262dee8a128621943a72c69b#rd") 液门穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492385&idx=1&sn=eda0ca7efab6df720b7a18bbf3e671ee#rd") 譩譆穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492386&idx=1&sn=dd347cc109c92bc60c0af766a0c6bf29#rd") 意舍穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492387&idx=1&sn=3b5a2fd6a141cddfcd2440a2ecaf1fe1#rd") 阴谷穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492388&idx=1&sn=4948c092dc12d08ca6f2cfea54abe38a#rd") 阳纲穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492389&idx=1&sn=96c94575e59d52feb954650334ec8589#rd") 渊腋穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&tempkey=OUEyqGOdnYQUXUQHAYHe99sKXHCRJDPOGWQRLCT6yaDoQET%2B0kfXh5kU9H5Q24AN1PBW29NkPMGwHwPDLnEAdVgOrcH%2FuKxv37uMir2t4vfPSw1YoiJG8DhKWPiejoTWTGdsbcJ%2FV3%2BHApR3ntNzyw%3D%3D&#rd") 印堂穴
+          br
+          p.tab_article_h3
+            span.xuewei_pinyin Z
+            span.xuewei_block
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492322&idx=1&sn=3393ad86f708e15ac157750739725fa5#rd") 中府穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492323&idx=1&sn=5f80603e3c0bd6dba751049219082e6b#rd") 中冲穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&tempkey=zutBVpmlGURJHPa5JjIC2%2FtaLlmXk5ro%2F8JMhdZydtMoZZrYRgGPX7slu%2B%2FZwSC1EA9ctcv0Y7k4zHdZoo341kdxnJhYAZldPD94fEXR3w7S%2FjzarhKIOi9OJ2D%2B9DNQQzpzM5pSsAL%2BtCXvEiziQQ%3D%3D&#rd") 中极穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492325&idx=1&sn=b5a5c6b7f22619a5d63e106299bc25c8#rd") 中渚穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492326&idx=1&sn=1d20bcef9bc23678a53ea9556fd13da4#rd") 中庭穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492327&idx=1&sn=e35d9c979b56be39d84177b5babf7b6b#rd") 中枢穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492328&idx=1&sn=df7c97d486330ba75ad028aceab024f3#rd") 中髎穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492329&idx=1&sn=a1527e63e016c768b223d8d70dde5527#rd") 中封穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492330&idx=1&sn=2c6ea8664e73c04be55ede061fd2cc8a#rd") 中都穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492331&idx=1&sn=769aa2607a04771f06ebcf7cd2d7bd8c#rd") 中注穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492332&idx=1&sn=3eb7eb74827457df42a7166a9bee5849#rd") 中脘穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492333&idx=1&sn=eeed502c6cf42b0bdf1507ebc8ade5a0#rd") 足临泣
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492334&idx=1&sn=f07239c40164dc41935e35d833ade746#rd") 足三里
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492335&idx=1&sn=f1550b3ba490a5c0f94bee9587d85b1d#rd") 足五里
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492336&idx=1&sn=f4489ec5cf69dc5965b5a650b4a585d0#rd") 足窍阴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492337&idx=1&sn=40ad0ae5ef7072162394266d34f15f4f#rd") 足通谷
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492342&idx=1&sn=c03343c3337caea93db8b50f33da26a5#rd") 章门穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492343&idx=1&sn=076c025ee23f420fb71a0617437caa00#rd") 周荣穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492344&idx=1&sn=1ab5209d88cee2a655c925561ead7b25#rd") 秩边穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492345&idx=1&sn=21a4942fc154778bdc047df2f839a881#rd") 支沟穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492346&idx=1&sn=fc3a291efdcd20c7dab726487335f6f6#rd") 支正穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492347&idx=1&sn=f0319ef53aa0c877aa601f52ed0d0e84#rd") 至阳穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492348&idx=1&sn=365b06043d389dd8fecbb99a6b9cc2cc#rd") 至阴穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492349&idx=1&sn=2f4397dc02a94df5847646134e706067#rd") 肘髎穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492350&idx=1&sn=81eaa6e289e3d02b2a0610f13a3cdb9c#rd") 照海穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492351&idx=1&sn=ffe8b97a4e641c155c9edb79b5621638#rd") 子宫穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492352&idx=1&sn=c69fc9a570551404de583492c3936a97#rd") 志室穴
+              span.xuewei_text
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492353&idx=1&sn=ad8a44fb6aa74705c79ec10a3be34111#rd") 筑宾穴
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492354&idx=1&sn=cdf395f89982164166ddea10c8f048cd#rd") 中膂俞
+                a(target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzI3NzAxODk5Mw==&mid=507492355&idx=1&sn=4a69a5171b992ba4ef253fe10a8626a2#rd") 辄筋穴
+
+
+
+        div.tab_cItem(id='download_tab')
+
+
+block js
+  script(src="/m/js/tab.js")
